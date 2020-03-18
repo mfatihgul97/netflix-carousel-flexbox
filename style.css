@@ -1,0 +1,86 @@
+html, body{
+    width: 100%;
+    height: 100vh;
+    font-size: 1.4em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+}
+header{
+    text-align: center;
+    font-size: 1.2em;
+    color: red;
+    background-color: black;
+}
+article{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    margin-top: 10px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.section{
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+a{
+    text-decoration: none; color: white;
+    z-index: 99;
+    position: absolute;
+}
+a:nth-of-type(1){
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #000000, transparent);
+}
+a:nth-of-type(2){
+    right: 0;
+    height: 100%;
+    background: linear-gradient(-90deg, #000000, transparent);
+}
+a img{
+    width: 2.5em;
+    height: calc(100% - 20px);
+}
+.box{
+    background-color: black;
+    width: 19%;
+    height: calc(100% - 30px);
+    transition: 250ms all;
+}
+.box:hover{
+    margin: 0 40px;
+    transform: scale(1.1);
+}
+
+.lightcoral{
+    background-color: lightcoral;
+}
+.lime{
+    background-color: lime;
+}
+.aqua{
+    background-color: aqua;
+}
+.crimson{
+    background-color: crimson;
+}
+.lightseagreen{
+    background-color: lightseagreen;
+}
